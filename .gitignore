@@ -1,0 +1,11 @@
+# folders
+.bsp
+.idea
+target
+lib
+classes
+
+# files
+*.iml
+*.class
+*.log
