@@ -15,6 +15,8 @@ scmInfo := Some(
 // Build
 ThisBuild / crossScalaVersions := Seq("2.12.13", "2.13.5")
 ThisBuild / scalaVersion := crossScalaVersions.value.last
+ThisBuild / githubWorkflowPublishTargetBranches := List()
+ThisBuild / githubWorkflowBuildPreamble ++= List()
 
 // Compile options
 scalacOptions ++= Seq("-deprecation", "-feature")
