@@ -17,6 +17,9 @@ ThisBuild / crossScalaVersions := Seq("2.12.13", "2.13.5")
 ThisBuild / scalaVersion := crossScalaVersions.value.last
 ThisBuild / githubWorkflowPublishTargetBranches := List()
 ThisBuild / githubWorkflowBuildPreamble ++= List()
+ThisBuild / githubWorkflowBuild := Seq(
+  WorkflowStep.Use(UseRef.Public("codecov", "codecov-action", "v1"), name = Some("Codecov"))
+)
 
 // Compile options
 scalacOptions ++= Seq("-deprecation", "-feature")
