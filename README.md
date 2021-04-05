@@ -3,6 +3,7 @@
 # sangria-airframe-json
 
 ![Continuous Integration](https://github.com/sh0hei/sangria-airframe-json/workflows/Continuous%20Integration/badge.svg)
+[![codecov.io](https://img.shields.io/codecov/c/github/sh0hei/sangria-airframe-json.svg)](http://codecov.io/github/sh0hei/sangria-airframe-json)
 
 [Sangria](https://sangria-graphql.github.io/) [airframe-json](https://wvlet.org/airframe/docs/airframe-json) marshalling.
 
