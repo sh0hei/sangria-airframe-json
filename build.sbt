@@ -13,7 +13,7 @@ scmInfo := Some(
   ))
 
 // Build
-ThisBuild / crossScalaVersions := Seq("2.12.13", "2.13.5")
+ThisBuild / crossScalaVersions := Seq("2.12.14", "2.13.6")
 ThisBuild / scalaVersion := crossScalaVersions.value.last
 ThisBuild / githubWorkflowPublishTargetBranches := List()
 ThisBuild / githubWorkflowBuildPreamble ++= List()
@@ -22,8 +22,7 @@ ThisBuild / githubWorkflowBuild := Seq(
 )
 
 // Compile options
-scalacOptions ++= Seq("-deprecation", "-feature")
-scalacOptions += "-target:jvm-1.8"
+scalacOptions ++= Seq("-deprecation", "-feature", "-target:jvm-1.8")
 javacOptions ++= Seq("-source", "8", "-target", "8")
 
 // Dependencies
